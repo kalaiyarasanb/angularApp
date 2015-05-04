@@ -1,0 +1,54 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'c:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gulp',
+1 verbose cli   '--save-dev' ]
+2 info using npm@2.7.4
+3 info using node@v0.12.2
+4 warn package.json angularApp@1.0.0 No description
+5 warn package.json angularApp@1.0.0 No repository field.
+6 warn package.json angularApp@1.0.0 No README data
+7 silly cache add args [ 'gulp', null ]
+8 verbose cache add spec gulp
+9 silly cache add parsed spec { raw: 'gulp',
+9 silly cache add   scope: null,
+9 silly cache add   name: 'gulp',
+9 silly cache add   rawSpec: '',
+9 silly cache add   spec: '*',
+9 silly cache add   type: 'range' }
+10 verbose addNamed gulp@*
+11 silly addNamed semver.valid null
+12 silly addNamed semver.validRange *
+13 silly addNameRange { name: 'gulp', range: '*', hasData: false }
+14 silly mapToRegistry name gulp
+15 silly mapToRegistry using default registry
+16 silly mapToRegistry registry https://registry.npmjs.org/
+17 silly mapToRegistry uri https://registry.npmjs.org/gulp
+18 verbose addNameRange registry:https://registry.npmjs.org/gulp not in flight; fetching
+19 verbose request uri https://registry.npmjs.org/gulp
+20 verbose request no auth needed
+21 info attempt registry request try #1 at 4:49:21 PM
+22 verbose request id 217cb52edcb35b3a
+23 http request GET https://registry.npmjs.org/gulp
+24 info retry will retry, error on last attempt: Error: certificate not trusted
+25 info attempt registry request try #2 at 4:49:32 PM
+26 http request GET https://registry.npmjs.org/gulp
+27 info retry will retry, error on last attempt: Error: certificate not trusted
+28 info attempt registry request try #3 at 4:50:33 PM
+29 http request GET https://registry.npmjs.org/gulp
+30 verbose stack Error: certificate not trusted
+30 verbose stack     at Error (native)
+30 verbose stack     at TLSSocket.<anonymous> (_tls_wrap.js:929:36)
+30 verbose stack     at TLSSocket.emit (events.js:104:17)
+30 verbose stack     at TLSSocket._finishInit (_tls_wrap.js:460:8)
+31 verbose cwd c:\Program Files\Apache Software Foundation\Apache2.2\htdocs\angularApp
+32 error Windows_NT 5.1.2600
+33 error argv "c:\\Program Files\\nodejs\\node.exe" "c:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gulp" "--save-dev"
+34 error node v0.12.2
+35 error npm  v2.7.4
+36 error code CERT_UNTRUSTED
+37 error certificate not trusted
+38 error If you need help, you may report this error at:
+38 error     <https://github.com/npm/npm/issues>
+39 verbose exit [ 1, true ]
